@@ -19,9 +19,11 @@ function SweeeperGrid({ updateGameOver, gameOver, updateCounter }) {
     const newGrid = [...grid];
     const cell = newGrid[col][row];
     if (cell.isMine) updateGameOver(true);
-    else newGrid[col][row] = { ...cell, distance: getDistance(row, col, grid) };
-    setGrid(newGrid);
-    setCellClicked(cellsClicked + 1);
+    else {
+      newGrid[col][row] = { ...cell, distance: getDistance(row, col, grid) };
+      setGrid(newGrid);
+      setCellClicked(cellsClicked + 1);
+    }
   };
 
   const renderGrid = (cols) => {

@@ -20,7 +20,7 @@ const generateRandomMines = () => {
   let counter = 0;
   let randomMines = {};
   while (counter < TOTAL_MINES) {
-    const random = Math.floor(Math.random() * 100) - 1;
+    const random = Math.ceil(Math.random() * 100) - 1;
     if (!randomMines[random] && random < TOTAL_ROWS * TOTAL_COLUMNS) {
       randomMines[String(random).padStart(2, "0")] = true;
       counter += 1;
