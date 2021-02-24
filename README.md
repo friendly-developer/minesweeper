@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Minesweeper Game
+
+Mine sweeper game built with ReactJS and hooks.
+
+Rules:
+
+1. Avoid the mines by guessing the distance on the cells
+1. If you click on any mine, game over
+1. To win make sure the remaining cells are equal to the total mines
+
+Hosted on [Github Pages](https://github.com/friendly-developer/minesweeper)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
